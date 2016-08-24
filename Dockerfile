@@ -1,4 +1,4 @@
-FROM java:8-jre
+FROM openjdk:8-jre
 
 MAINTAINER Benjamin Stein <ben-st@diffus.org>
 
@@ -24,7 +24,7 @@ USER ${user}
 
 # download the jdownloader jar file and run it to create the neccesary files and folders
 RUN \
-	wget -O /opt/JDownloader/JDownloader.jar --user-agent="https://hub.docker.com/r/ben-st/jdownloader2-headless/" --progress=bar:force http://installer.jdownloader.org/JDownloader.jar && \
+	wget -O /opt/JDownloader/JDownloader.jar --user-agent="https://hub.docker.com/r/benst/headless-jd2-docker/" --progress=bar:force http://installer.jdownloader.org/JDownloader.jar && \
 	java -Djava.awt.headless=true -jar /opt/JDownloader/JDownloader.jar ;
 
 
