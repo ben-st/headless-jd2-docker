@@ -6,5 +6,5 @@ services:
     image: "benst/headless-jd2-docker"
     container_name: jd
     volumes:
-      - "/opt/data/jd:/opt/data"
+      - "/opt/data/jd:/opt/downloads"
       - "/opt/config/jd:/opt/JDownloader/cfg"
