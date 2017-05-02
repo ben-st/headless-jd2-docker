@@ -1,6 +1,6 @@
 FROM openjdk:8-jre
 
-MAINTAINER Benjamin Stein <ben-st@diffus.org>
+LABEL maintainer "Benjamin Stein <info@diffus.org>"
 
 # the user jd2 will run with and his group
 ARG user=jd2
